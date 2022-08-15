@@ -13,6 +13,7 @@
     <RepositoryUrl>https://github.com/HypertheoryTraining/Hypertheory.KafkaUtils</RepositoryUrl>
     <PackageTags>Kafka</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Version>1.1.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,12 +30,14 @@
   </ItemGroup>
 
   <ItemGroup>
+	  
     <PackageReference Include="Confluent.Kafka" Version="1.9.2" />
     <PackageReference Include="Confluent.SchemaRegistry" Version="1.9.2" />
     <PackageReference Include="Confluent.SchemaRegistry.Serdes.Avro" Version="1.9.2" />
     <PackageReference Include="Confluent.SchemaRegistry.Serdes.Json" Version="1.9.2" />
     <PackageReference Include="Confluent.SchemaRegistry.Serdes.Protobuf" Version="1.9.2" />
     <PackageReference Include="Google.Protobuf" Version="3.21.5" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
