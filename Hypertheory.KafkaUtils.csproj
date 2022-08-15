@@ -4,7 +4,29 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Kafka Utilities</Title>
+    <Authors>Jeffry Gonzalez</Authors>
+    <Description>A set of utilities for producing and consuming Kafka Topics - created for a training class.</Description>
+    <PackageProjectUrl>https://github.com/HypertheoryTraining/Hypertheory.KafkaUtils</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/HypertheoryTraining/Hypertheory.KafkaUtils</RepositoryUrl>
+    <PackageTags>Kafka</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\class\EventDriven\Docs\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Confluent.Kafka" Version="1.9.2" />
@@ -13,6 +35,13 @@
     <PackageReference Include="Confluent.SchemaRegistry.Serdes.Json" Version="1.9.2" />
     <PackageReference Include="Confluent.SchemaRegistry.Serdes.Protobuf" Version="1.9.2" />
     <PackageReference Include="Google.Protobuf" Version="3.21.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
