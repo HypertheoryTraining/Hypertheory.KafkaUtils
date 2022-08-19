@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/HypertheoryTraining/Hypertheory.KafkaUtils</RepositoryUrl>
     <PackageTags>Kafka</PackageTags>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
